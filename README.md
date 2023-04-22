@@ -29,14 +29,14 @@ cp -R project-to-link forge-project/lib;
 cd forge-project;
 forge test;
 
-rm -rf out/
 cd ..;
-rm forge-project/lib/project-to-link
+rm -Rf forge-project/lib/project-to-link;
 
 # failing case
 ln -s `pwd`/project-to-link ./forge-project/lib/
 cd forge-project;
 forge test;
 
-cd ../..;
+cd ..;
+cd ..;
 ```
