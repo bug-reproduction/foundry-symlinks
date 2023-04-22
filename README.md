@@ -29,6 +29,7 @@ cp -R project-to-link forge-project/lib;
 cd forge-project;
 forge test;
 
+rm -rf out/
 cd ..;
 rm forge-project/lib/project-to-link
 
