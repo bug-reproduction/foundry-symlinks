@@ -19,6 +19,8 @@ forge test
 
 
 ```bash
+rm -Rf foundry-symlinks;
+
 git clone git@github.com:bug-reproduction/foundry-symlinks.git;
 cd foundry-symlinks;
 
@@ -34,4 +36,6 @@ rm forge-project/lib/project-to-link
 ln -s `pwd`/project-to-link ./forge-project/lib/
 cd forge-project;
 forge test;
+
+cd ../..;
 ```
